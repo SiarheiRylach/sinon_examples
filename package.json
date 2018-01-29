@@ -1,0 +1,29 @@
+{
+  "name": "sinon_examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiarheiRylach/sinon_examples.git"
+  },
+  "author": "Siarhei Rylach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SiarheiRylach/sinon_examples/issues"
+  },
+  "homepage": "https://github.com/SiarheiRylach/sinon_examples#readme",
+  "dependencies": {
+    "request": "2.72.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "co-mocha": "1.1.2",
+    "mocha": "2.5.3",
+    "sinon": "1.17.4",
+    "sinon-chai": "2.8.0"
+  }
+}

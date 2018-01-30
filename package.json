@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/SiarheiRylach/sinon_examples#readme",
   "dependencies": {
-    "istanbul": "^0.4.5",
     "request": "2.72.0"
   },
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "chai": "3.5.0",
     "co-mocha": "1.1.2",
     "mocha": "2.5.3",

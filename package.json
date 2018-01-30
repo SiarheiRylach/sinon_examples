@@ -7,7 +7,8 @@
     "test": "npm run test-unit",
     "pretest-unit": "SET NODE_ENV=test",
     "test-unit": "mocha --require co-mocha \"lib/*.spec.js\"",
-    "test-cov": "istanbul cover -x *.test.js ./node_modules/mocha/bin/_mocha -- -R spec lib/*.spec.js"
+    "test-cov": "istanbul cover -x *.test.js ./node_modules/mocha/bin/_mocha -- -R spec lib/*.spec.js",
+    "eslint": "./node_modules/.bin/eslint ./"
   },
   "repository": {
     "type": "git",
@@ -23,9 +24,10 @@
     "request": "2.72.0"
   },
   "devDependencies": {
-    "istanbul": "^0.4.5",
     "chai": "3.5.0",
     "co-mocha": "1.1.2",
+    "eslint": "^4.16.0",
+    "istanbul": "^0.4.5",
     "mocha": "2.5.3",
     "sinon": "1.17.4",
     "sinon-chai": "2.8.0"

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "npm run test-unit",
+    "test-unit": "NODE_ENV=test mocha --require co-mocha \"lib/*.spec.js\""
   },
   "repository": {
     "type": "git",

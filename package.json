@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test-unit",
-    "test-unit": "NODE_ENV=test mocha --require co-mocha \"lib/*.spec.js\""
+    "pretest-unit": "SET NODE_ENV=test",
+    "test-unit": "mocha --require co-mocha \"lib/*.spec.js\"",
+    "test-cov": "istanbul cover -x *.test.js ./node_modules/mocha/bin/_mocha -- -R spec lib/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/SiarheiRylach/sinon_examples#readme",
   "dependencies": {
+    "istanbul": "^0.4.5",
     "request": "2.72.0"
   },
   "devDependencies": {
